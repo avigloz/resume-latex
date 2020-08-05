@@ -11,7 +11,7 @@
 \usetikzlibrary{decorations.pathreplacing}
 
 % Source: https://tex.stackexchange.com/a/277825
-\newtcolorbox{rightbracket}{
+\newtcolorbox{leftline}{
     enhanced jigsaw, 
     breakable, % allow page breaks
     frame hidden, % hide the default frame
@@ -20,14 +20,14 @@
             fill=none, % fill paper
 			decoration={brace,amplitude=0},
             decorate,
-            thick,
+            ultra thick,
             black,
         ]
         % right line
         (frame.south west)--(frame.north west);
     },
     % paragraph skips obeyed within tcolorbox
-    parbox=false,
+    parbox=false
 }
 
 \begin{document}
@@ -72,28 +72,28 @@
 
 		\vspace{2.25mm}
 		\textbf{University of Pittsburgh, SCI}, Pittsburgh, PA\\
-		\begin{rightbracket}
+		\begin{leftline}[colback=gray]
 			{\small \textbf{Machine Learning Researcher}} \hfill \textit{\small May 2020 --- Present}
 			\begin{itemize}
 				\item Conducting machine learning and developing an image segmentation model for cervical spine CT scans, to enable uninvasive classification of spinal anatomy during surgery
 				\vspace{-2mm}
 				\item Compiling and reading about various prior research related to machine learning for anatomical classification
 			\end{itemize}
-		\end{rightbracket}
+		\end{leftline}
 
-		\begin{rightbracket}
+		\begin{leftline}
 			{\small \textbf{Undergraduate Researcher, Learning Technologies Lab}} \hfill \textit{\small November 2019 --- Present}
 			\begin{itemize}
 				\item Using Python and BeautifulSoup to efficiently scrape hundreds of faculty profiles to gain various insights, such as specific research interests, publication data, lab affiliations, etc.
 				\vspace{-2mm}
 				\item Compiling scraped data into an easy-to-process dataset for use in an undergraduate research opportunity discovery platform
 			\end{itemize}
-		\end{rightbracket}
+		\end{leftline}
 
 
 		\vspace{-1.35mm}
 		\textbf{Uber Advanced Technologies Group (ATG)}, Pittsburgh, PA\\
-		\begin{rightbracket}
+		\begin{leftline}
 			{\small \textbf{Software Engineering Intern, Simulation}} \hfill \textit{\small May 2019 --- August 2019}
 			\begin{itemize}
 				\item Developed algorithmic solutions to complex data-syncing challenges relating to the ETL process
@@ -102,12 +102,12 @@
 				\vspace{-2mm}
 				\item Contributed significantly to an API written in Go for data analysis in production
 			\end{itemize}
-		\end{rightbracket}
+		\end{leftline}
 
 	
 		\vspace{-1.35mm}
 		\textbf{aspace}, Seattle, WA\\
-		\begin{rightbracket}
+		\begin{leftline}
 			{\small \textbf{Software Engineer, Backend} \hfill \textit{June 2017 --- October 2017}}
 
 			\begin{itemize}
@@ -117,7 +117,7 @@
 				\vspace{-2mm}
 				\item Used Twilio's SMS API to integrate two-factor authentication into the backend
 			\end{itemize}
-		\end{rightbracket}
+		\end{leftline}
 
 		\vspace{1.5mm}
 		{\large \raggedright \textbf{Highlighted Technical Projects}}

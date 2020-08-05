@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,  margin=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{hyperref}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage[many]{tcolorbox}
+\usetikzlibrary{decorations.pathreplacing}
+
+% Source: https://tex.stackexchange.com/a/277825
+\newtcolorbox{leftli}{
+    enhanced jigsaw, 
+    breakable, % allow page breaks
+    frame hidden, % hide the default frame
+	colback=gray!20,
+    overlay={%
+        \draw [
+            fill=none, % fill paper
+			decoration={brace,amplitude=0},
+            decorate,
+            thin,
+            black
+        ]
+        % right line
+        (frame.south west)--(frame.north west);
+    },
+    % paragraph skips obeyed within tcolorbox
+    parbox=false,
+}
+
+\begin{document}
+	\pagestyle{empty}
+	\begin{center}
+		{\huge \textbf{Avi Glozman}} {\large \hfill 425.802.6718 --- \href{mailto:avi@avigloz.net}{avi@avigloz.net}}\\
+		\vspace{1.25mm}
+		{\large American and Israeli Dual Citizen \hfill \href{https://avigloz.net}{avigloz.net} --- GitHub: \href{https://github.com/avigloz}{/avigloz}}
+	\end{center}
+	
+	\begin{flushleft}	
+		\vspace{-1.65mm}
+		{\large \raggedright \textbf{Education}}
+		\vspace{1.25mm}
+	
+		\hrule
+		
+		\vspace{2.25mm}
+		\textbf{University of Pittsburgh}, Pittsburgh, PA\\
+		{\small B.Sc. in Computer Science \hfill \textit{August 2018 --- December 2020 (Expected)}}\\
+		{\small Dean's List: \textit{Spring 2020}}
+	
+		\vspace{1.25mm} 
+		{\large \raggedright \textbf{Skills}}
+		\vspace{1.25mm}
+	
+		\hrule
+	
+		\vspace{2.25mm}
+		\textbf{Programming languages:} Python, Node.js, Java, C\verb!#!\\
+		\vspace{0.5mm}
+		\textbf{Learning about:} C\texttt{++}, Haskell, Machine Learning, Computer Vision, Functional Programming, Language Design\\
+		\vspace{0.5mm}
+		\textbf{Technologies:} Git, SQL (MS, My, Postgres), NoSQL (CouchDB, MongoDB), Linux, Azure, \LaTeX\\
+
+		\vspace{1.5mm}
+		{\large \raggedright \textbf{Professional Experience}}
+		\vspace{1.25mm}
+	
+		\hrule
+
+		\vspace{2.25mm}
+		\textbf{University of Pittsburgh, SCI}, Pittsburgh, PA\\
+		\begin{leftli}
+			{\small \textbf{Machine Learning Researcher} \textit{CS Capstone}} \hfill \textit{\small May 2020 --- August 2020}
+			\begin{itemize}
+				\item Used YOLOv3 object detection with the Darknet machine learning framework to allow for uninvasive identification of parts of the cervical spine anatomy in real-time
+				\vspace{-2mm}
+				\item Developed a pipeline for converting CT scan data (DICOM) into a 3D model, then into images for model training and testing
+			\end{itemize}
+		\end{leftli}
+
+		\begin{leftli}
+			{\small \textbf{Undergraduate Researcher, Learning Technologies Lab}} \hfill \textit{\small November 2019 --- Present}
+			\begin{itemize}
+				\item Using Python and BeautifulSoup to efficiently scrape hundreds of faculty profiles to gain various insights, such as specific research interests, publication data, lab affiliations, etc.
+				\vspace{-2mm}
+				\item Compiling scraped data into an easy-to-process dataset for use in an undergraduate research opportunity discovery platform
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{-1.50mm}
+		\textbf{Uber}, Pittsburgh, PA\\
+		\begin{leftli}
+			{\small \textbf{Software Engineering Intern, Simulation, Advanced Technologies Group (ATG)}} \hfill \textit{\small May 2019 --- August 2019}
+			\begin{itemize}
+				\item Created an ETL system using Python for moving self-driving car related data from DynamoDB to PostgreSQL, and solved complex data-syncing challenges
+				\vspace{-2mm}
+				\item Developed algorithms in Python for effective pruning of broken, invalid, and\texttt{/}or redundant data
+				\vspace{-2mm}
+				\item Contributed significantly to a web API written in Go for self-driving car data analysis in production
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{-1.50mm}
+		\textbf{aspace}, Seattle, WA\\
+		\begin{leftli}
+			{\small \textbf{Software Engineer, Backend} \hfill \textit{June 2017 --- October 2017}}
+
+			\begin{itemize}
+				\item Designed databases using both MySQL and MongoDB to support a RESTful API written in Node.js
+				\vspace{-2mm}
+				\item Wrote an implementation of Dijkstra's algorithm using Node.js for use during navigation
+				\vspace{-2mm}
+				\item Used Twilio's SMS API to integrate two-factor authentication into the backend
+			\end{itemize}
+		\end{leftli}
+
+		{\footnotesize \textit{Please note that the present lack of software engineering internships is solely a consequence of my quick completion of my degree.}}
+
+		\vspace{1.25mm}
+		{\large \raggedright \textbf{Highlighted Technical Projects}}
+		\vspace{1.25mm}
+	
+		\hrule
+	
+		\vspace{2.25mm}
+		\textbf{\href{https://github.com/avigloz/synesthesia}{Synesthesia}} \textit{(open source)}
+		\vspace{-2mm}
+		\begin{itemize}
+			\item Program that creates unique patterns/visualizations for any sort of audio, by algorithmically interpreting and "displaying" the sound in a visually satisfying manner (using C\texttt{++}).
+		\end{itemize}
+		\vspace{-2mm}
+		\textbf{\href{https://rentnexus.net}{rentnexus}}
+		\vspace{-2mm}
+		\begin{itemize}
+			\item Site that provides a focused platform for \textit{students} to post about housing opportunities and requests, e.g sublet notices, roommate requests, etc. around campus.
+		\end{itemize}
+
+		\vspace{1.5mm}
+		{\large \raggedright \textbf{Extracurriculars}}
+		\vspace{1.25mm}
+	
+		\hrule
+	
+		\vspace{2.25mm}
+		Pitt Computer Science Club (CSC) Member and Mentor\hfill \textit{September 2018 --- Present}\\
+		%Private Online Mathematics and CS Tutor \hfill \textit{October 2017 --- Present}
+		Wikipedia Contributor (under username \textit{Avigl})\hfill \textit{June 2016 --- Present}
+		
+	\end{flushleft}
+\end{document}
