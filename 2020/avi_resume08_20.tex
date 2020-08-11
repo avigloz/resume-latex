@@ -1,3 +1,6 @@
+% Resume (and underlying template) (C) Avi Glozman, 2019-2020.
+% See LICENSE for more information.
+
 \documentclass[11pt]{article}
 \usepackage[a4paper,  margin=0.5in, top=0.5in, bottom=0.5in]{geometry}
 \usepackage{hyperref}
@@ -11,11 +14,12 @@
 \usetikzlibrary{decorations.pathreplacing}
 
 % Source: https://tex.stackexchange.com/a/277825
+% I also include some personal customization.
 \newtcolorbox{leftli}{
     enhanced jigsaw, 
     breakable, % allow page breaks
     frame hidden, % hide the default frame
-	colback=gray!20,
+	colback=gray!15,
     overlay={%
         \draw [
             fill=none, % fill paper
@@ -106,7 +110,7 @@
 		\vspace{-1.50mm}
 		\textbf{aspace}, Seattle, WA\\
 		\begin{leftli}
-			{\small \textbf{Software Engineer, Backend} \hfill \textit{June 2017 --- October 2017}}
+			{\small \textbf{Lead Software Engineer, Backend} \hfill \textit{May 2017 --- October 2017}}
 
 			\begin{itemize}
 				\item Designed databases using both MySQL and MongoDB to support a RESTful API written in Node.js
