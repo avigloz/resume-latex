@@ -1,10 +1,11 @@
-% Resume (and underlying template) (C) Avi Glozman, 2019-2020.
+% Resume (and underlying template) (C) Avi Glozman, 2019-2021.
 % See LICENSE for more information.
 
 \documentclass[10pt]{article}
 \usepackage[a4paper,  margin=0.25in, top=0.3in, bottom=0.3in]{geometry}
 \usepackage{hyperref}
 
+\usepackage[dvipsnames]{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
@@ -40,7 +41,7 @@
 	\begin{center}
 		{\huge \textbf{Avi Glozman}} {\large \hfill 425.802.6718 --- \href{mailto:avi@avigloz.net}{avi@avigloz.net}}\\
 		\vspace{1.25mm}
-		{\large American and Israeli Dual Citizen \hfill \href{https://avigloz.net}{avigloz.net} --- \href{https://github.com/avigloz}{github.com/avigloz}}
+		{\large Backend and Data Engineer \hfill \href{https://avigloz.net}{avigloz.net} --- \href{https://github.com/avigloz}{github.com/avigloz}}
 	\end{center}
 	
 	\begin{flushleft}	
@@ -52,9 +53,9 @@
 		
 		\vspace{2.25mm}
 		\textbf{University of Pittsburgh}, Pittsburgh, PA\\
-      	{\small B.Sc. in Computer Science, \textbf{3.4 in-major, 3.2 overall} \hfill \textit{August 2018 --- December 2020}}\\
-		{\small Dean's List: \textit{Spring 2020, Fall 2020}}\\
-		{\small \textbf{Notable coursework:} Web Applications, Data Structures, Algorithm Implementation, Intro OS, Intro Systems Software (C), Computer Organization and Assembly (MIPS), Discrete Mathematics, Formal Methods}
+      	{\small B.Sc. in Computer Science, \textbf{3.4 in-major, 3.2 overall} \hfill \textit{Aug. 2018 $\rightarrow$ Dec. 2020}}\\
+		{\small Dean's List: \textit{Spring 2020, Fall 2020}}%\\
+		%{\small \textbf{Notable coursework:} Web Applications, Data Structures, Algorithm Implementation, Intro to OS (Linux kernel), Discrete Mathematics, Formal Methods}
 	
 		\vspace{1.25mm} 
 		{\large \raggedright \textbf{Skills}}
@@ -63,11 +64,11 @@
 		\hrule
 	
 		\vspace{2.25mm}
-		\textbf{Programming languages:} C, C\verb!#!, C\texttt{++}, Java, Node.js, Python\\
+		\textbf{Programming languages:} Python, Node.js, C, C\texttt{++}, C\verb!#!, Java\\
 		\vspace{0.5mm}
-		\textbf{Concepts:} REST, Sockets, Distributed Systems, Machine Learning, Operating Systems\\
+		\textbf{Concepts:} REST, WebSockets, Distributed Systems, Machine Learning, Operating Systems\\
 		\vspace{0.5mm}
-		\textbf{Software:} Git, Linux, Windows, SQL, NoSQL, Azure, \LaTeX\\ 
+		\textbf{Software:} Git, Linux, Windows, SQL, NoSQL, Azure, AWS, \LaTeX\\ 
 		\vspace{0.5mm}
 		\textbf{Spoken languages:} English (Native), Russian (Native), Spanish (Partial fluency),  Hebrew (Basic), Mandarin (Very basic)
 
@@ -80,7 +81,7 @@
 		\vspace{2.25mm}
 		\textbf{University of Pittsburgh, SCI}, Pittsburgh, PA\\
 		\begin{leftli}
-         {\small \textbf{Machine Learning Researcher} \textit{(Capstone Project)}}  \hfill \textit{\small May 2020 --- September 2020}
+         {\small \textbf{Machine Learning Researcher} \textit{(Capstone Project)}}  \hfill \textit{\small May 2020 $\rightarrow$ Sep. 2020}
 			\begin{itemize}
 				\item Trained a YOLOv3 object detection model using Darknet for detecting parts of the human spinal anatomy with up to 98\verb!%! accuracy
 				\vspace{-2mm}
@@ -89,7 +90,7 @@
 		\end{leftli}
 
 		\begin{leftli}
-			{\small \textbf{Undergraduate Researcher, Learning Technologies Lab}} \hfill \textit{\small November 2019 --- December 2020}
+			{\small \textbf{Undergraduate Researcher, Learning Technologies Lab}} \hfill \textit{\small Nov. 2019 $\rightarrow$ Dec. 2020}
 			\begin{itemize}
 				\item Used Python and BeautifulSoup to efficiently scrape hundreds of faculty profiles to gain various insights, such as specific research interests, publication data, lab affiliations, etc.
 				\vspace{-2mm}
@@ -100,7 +101,7 @@
 		\vspace{-1.50mm}
 		\textbf{Uber}, Pittsburgh, PA\\
 		\begin{leftli}
-			{\small \textbf{Software Engineering Intern, Advanced Technologies Group (ATG), Simulation}} \hfill \textit{\small May 2019 --- August 2019}
+			{\small \textbf{Software Engineering Intern, Advanced Technologies Group (ATG), Simulation}} \hfill \textit{\small May 2019 $\rightarrow$ Aug. 2019}
 			\begin{itemize}
 				\item Created an ETL system using Python for moving self-driving car related data from DynamoDB to PostgreSQL, and solved complex data-syncing challenges
 				\vspace{-2mm}
@@ -113,7 +114,7 @@
 		\vspace{-1.50mm}
 		\textbf{aspace}, Seattle, WA\\
 		\begin{leftli}
-			{\small \textbf{Lead Software Engineer, Backend}} \hfill \textit{\small May 2017 --- October 2017 (11th-12th grade)}
+			{\small \textbf{Lead Software Engineer, Backend}} \hfill \textit{\small May 2017 $\rightarrow$ Oct. 2017 (11\textsuperscript{th}\texttt{-} 12\textsuperscript{th} grade)}
 
 			\begin{itemize}
 				\item Designed MySQL and MongoDB databases for storing parking spot sensor data and user data, respectively
@@ -125,7 +126,7 @@
 				\item Used Twilio's SMS API to integrate two-factor authentication into the backend
 			\end{itemize}
 		\end{leftli}
-
+		\vspace{-1mm}
 		{\footnotesize \textit{Please note that the present lack of software engineering internships is solely a consequence of my quick completion of my degree.}}
 
 		\vspace{1.25mm}
@@ -135,29 +136,12 @@
 		\hrule
 	
 		\vspace{2.25mm}
-		\textbf{Virtual Memory Simulator} \textit{(schoolwork)} \hfill \textit{\small 2020}
+		\textbf{\href{https://github.com/avigloz/incompare}{Incompare}} \textit{(personal, open source via GitHub)} \hfill \textit{\small 2021 $\rightarrow$ Now}
 		\vspace{-2mm}
 		\begin{itemize}
-			\item Wrote a small virtual memory simulator in Java, specifically for demonstrating the Second Chance local page replacement algorithm
+			\item Using local tax rates and user-provided financial inputs, plots a parrallel coordinate graph with Plotly (using Python)
 			\vspace{-2mm}
-			\item Supports both 32 and 64-bit virtual memory addresses, and outputs cumulative results such as \verb!#! of page faults, memory accesses, and writes to disk per process
-		\end{itemize}
-		\vspace{-1.5mm}
-		\pagebreak
-		\textbf{Semaphores and Synchronization} \textit{(schoolwork)} \hfill \textit{\small 2020}
-		\vspace{-2mm}
-		\begin{itemize}
-			\item Modified the Linux 2.6.23 kernel to add a custom semaphore implementation, with testing done using QEMU
-			\vspace{-2mm}
-			\item Added new syscalls for synchronization/process scheduling using FIFO
-		\end{itemize}
-		\vspace{-1.5mm}
-		\textbf{Asteroids} \textit{(schoolwork)} \hfill \textit{\small 2020}
-		\vspace{-2mm}
-		\begin{itemize}
-			\item Created a fully functional Asteroids clone in MIPS assembly, using a provided graphics engine and the MARS IDE
-			\vspace{-2mm}
-			\item Implemented physics/movement, random asteroid generation, and collision logic from scratch
+			\item Fetches/scrapes relevant data from SmartAsset.com's API using automatically detected, or user-provided zipcode
 		\end{itemize}
 		\vspace{-1.5mm}
 		\textbf{Lightweight Messenger} \textit{(schoolwork)} \hfill \textit{\small 2020}
@@ -167,12 +151,27 @@
 			\vspace{-2mm}
 			\item Implemented a RESTful API with Express.js for interacting with a PostgreSQL database for user accounts, contacts, message history, etc.
 		\end{itemize}
-		\vspace{-1.5mm}
-		\textbf{\href{https://github.com/avigloz/synesthesia}{Synesthesia}} \textit{(personal, open source via GitHub)} \hfill \textit{\small 2020 --- Present}
-		\vspace{-2mm}
-		\begin{itemize}
-			\item Program that creates unique patterns/visualizations for any sort of audio, by algorithmically interpreting and "displaying" the sound in a visually satisfying manner (using C\texttt{++})
-		\end{itemize}
+		\vspace{-1mm}
+		{\footnotesize \textit{For more cool projects, don't hesitate to check out my GitHub!}}
+
+		% may add these back later, but they are not really relevant.
+		% \vspace{-1.5mm}
+		% \textbf{Virtual Memory Simulator} \textit{(schoolwork)} \hfill \textit{\small 2020}
+		% \vspace{-2mm}
+		% \begin{itemize}
+		% 	\item Wrote a small virtual memory simulator in Java, specifically for demonstrating the Second Chance local page replacement algorithm
+		% 	\vspace{-2mm}
+		% 	\item Supports both 32 and 64-bit virtual memory addresses, and outputs cumulative results such as \verb!#! of page faults, memory accesses, and writes to disk per process
+		% \end{itemize}
+		% \vspace{-1.5mm}
+		% \pagebreak
+		% \textbf{Semaphores and Synchronization} \textit{(schoolwork)} \hfill \textit{\small 2020}
+		% \vspace{-2mm}
+		% \begin{itemize}
+		% 	\item Modified the Linux 2.6.23 kernel to add a custom semaphore implementation, with testing done using QEMU
+		% 	\vspace{-2mm}
+		% 	\item Added new syscalls for synchronization/process scheduling using FIFO
+		% \end{itemize}
 		
 		\vspace{1.5mm}
 		{\large \raggedright \textbf{Extracurriculars}}
@@ -181,9 +180,9 @@
 		\hrule
 	
 		\vspace{2.25mm}
-		Pitt Computer Science Club (CSC) Member and Mentor\hfill \textit{\small September 2018 --- December 2020}\\
-		Private Online Mathematics and CS Tutor \hfill \textit{\small October 2017 --- Present}\\
-		Wikipedia Contributor (under username \textit{Avigl}) --- \href{https://pageviews.toolforge.org/?project=en.wikipedia.org&platform=all-access&agent=user&redirects=0&range=all-time&pages=Timeline_of_social_media|Timeline_of_online_advertising|Timeline_of_e-commerce|Screening_Partnership_Program|Silicon_Valley_Education_Foundation|Chicago_Community_Trust}{over 750k all-time pageviews}\hfill \textit{\small June 2016 --- Present}
+		Pitt Computer Science Club (CSC) Member and Mentor\hfill \textit{\small Sep. 2018 $\rightarrow$ Dec. 2020}\\
+		Private Online Mathematics and CS Tutor \hfill \textit{\small Oct. 2017 $\rightarrow$ Now}\\
+		Wikipedia Contributor (under username \textit{Avigl}) --- \href{https://pageviews.toolforge.org/?project=en.wikipedia.org&platform=all-access&agent=user&redirects=0&range=all-time&pages=Timeline_of_social_media|Timeline_of_online_advertising|Timeline_of_e-commerce|Screening_Partnership_Program|Silicon_Valley_Education_Foundation|Chicago_Community_Trust}{over 770k all-time article views} \hfill \textit{\small June 2016 $\rightarrow$ Now}
 		
 	\end{flushleft}
 \end{document}
