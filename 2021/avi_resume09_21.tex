@@ -1,0 +1,175 @@
+% Resume (and underlying template) (C) Avi Glozman, 2019-2021.
+% See LICENSE for more information.
+
+\documentclass[10pt]{article}
+\usepackage[a4paper,  margin=0.25in, top=0.3in, bottom=0.3in]{geometry}
+\usepackage{hyperref}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage[many]{tcolorbox}
+\usetikzlibrary{decorations.pathreplacing}
+
+% Source: https://tex.stackexchange.com/a/277825
+% I also include some personal customization.
+\newtcolorbox{leftli}{
+    enhanced jigsaw, 
+    breakable, % allow page breaks
+    frame hidden, % hide the default frame
+	colback=gray!15,
+    overlay={%
+        \draw [
+            fill=none, % fill paper
+			decoration={brace,amplitude=0},
+            decorate,
+            thin,
+            black
+        ]
+        % right line
+        (frame.south west)--(frame.north west);
+    },
+    % paragraph skips obeyed within tcolorbox
+    parbox=false,
+}
+
+\begin{document}
+	\pagestyle{empty}
+	\begin{center}
+		{\huge \textbf{Avi Glozman}} {\large \hfill 425.802.6718 --- \href{mailto:avi@avigloz.net}{avi@avigloz.net}}\\
+		%\vspace{0.5mm}
+		{\large Backend Engineer and Architect \hfill \href{https://avigloz.net}{avigloz.net} --- \href{https://github.com/avigloz}{github.com/avigloz}}
+	\end{center}
+	
+	\begin{flushleft}	
+		\vspace{-0.5mm}
+		{\large \raggedright \textbf{Skills}}
+		\vspace{1.25mm}
+	
+		\hrule
+	
+		\vspace{2.25mm}
+		\textbf{Programming languages:} Node.js (ES6), TypeScript, Python, C\verb!#!, Java\\
+		\vspace{0.5mm}
+		\textbf{Concepts:} REST APIs, Serverless, Distributed Systems, Data Streaming\\
+		\vspace{0.5mm}
+		\textbf{Software:} NoSQL, Object storage (S3), Elasticsearch, SQL, Git, Linux, AWS, Azure, \LaTeX\\ 
+		\vspace{0.5mm}
+		\textbf{Spoken languages:} English (Native), Russian (Native), Spanish (Elementary),  Hebrew (Elementary)
+
+		\vspace{1.5mm}
+		{\large \raggedright \textbf{Professional Experience}}
+		\vspace{1.25mm}
+	
+		\hrule
+
+		\vspace{2.25mm}
+
+		\textbf{Hooked}, Remote, USA\\
+		\begin{leftli}
+			{\small \textbf{Software Engineer and Architect, Backend}} \hfill \textit{\small Apr. 2021 $\rightarrow$ Now}
+			\begin{itemize}
+				\item Developing and deploying data streaming architecture on AWS for analytics and big data storage
+				\vspace{-2mm}
+				\item Integrating payment services to facilitate subscriptions into the API and backend framework using Node.js
+				\vspace{-2mm}
+				\item Writing test-driven, efficient and elegant code in an Agile manner
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{-1.50mm}
+		\textbf{University of Pittsburgh, SCI}, Pittsburgh, PA\\
+		\begin{leftli}
+			{\small \textbf{Undergraduate Researcher, Learning Technologies Lab}} \hfill \textit{\small Nov. 2019 $\rightarrow$ Dec. 2020}
+			\begin{itemize}
+				\item Used Python and BeautifulSoup to efficiently scrape hundreds of faculty profiles to gain various insights, such as specific research interests, publication data, lab affiliations, etc.
+				\vspace{-2mm}
+				\item Compiled scraped data into easy-to-process datasets for use in a university-wide undergraduate research opportunity discovery platform
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{-1.50mm}
+		\textbf{Uber}, Pittsburgh, PA\\
+		\begin{leftli}
+			{\small \textbf{Software Engineering Intern, Advanced Technologies Group (ATG), Simulation}} \hfill \textit{\small May 2019 $\rightarrow$ Aug. 2019}
+			\begin{itemize}
+				\item Created an ETL system using Python for moving self-driving car related data from DynamoDB to PostgreSQL, and solved complex data-syncing challenges
+				\vspace{-2mm}
+				\item Developed pruning algorithms in Python for preventing transfer of broken, invalid, and\texttt{/}or redundant data relating to self-driving car testing
+				\vspace{-2mm}
+				\item Contributed significantly to a web API written in Go for self-driving car data analysis in production
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{-1.50mm}
+		\textbf{Aspace}, Seattle, WA\\
+		\begin{leftli}
+			{\small \textbf{Lead Software Engineer, Backend}} \hfill \textit{\small May 2017 $\rightarrow$ Oct. 2017 (11\textsuperscript{th}\texttt{-} 12\textsuperscript{th} grade)}
+
+			\begin{itemize}
+				\item Designed MySQL and MongoDB databases for storing parking spot sensor data and user data, respectively
+				\vspace{-2mm}
+				\item Designed a RESTful API written in Node.js to support UX on Android and iOS apps, and for recieving sensor data
+				\vspace{-2mm}
+				\item Wrote an implementation of Dijkstra's algorithm using Node.js for navigation, relying on user location data and data from Mapbox's API
+				\vspace{-2mm}
+				\item Used Twilio's SMS API to integrate two-factor authentication into the backend
+			\end{itemize}
+		\end{leftli}
+		\vspace{-1mm}
+		{\footnotesize \textit{Please note that the present lack of software engineering internships is solely a consequence of my quick completion of my degree.}}
+
+		% \vspace{1.25mm}
+		% {\large \raggedright \textbf{Noteworthy Technical Projects}}
+		% \vspace{1.25mm}
+	
+		% \hrule
+	
+		% \vspace{2.25mm}
+		% \textbf{\href{https://github.com/avigloz/incompare}{Incompare}} \textit{(personal, open source via GitHub)} \hfill \textit{\small 2021 $\rightarrow$ Now}
+		% \vspace{-2mm}
+		% \begin{itemize}
+		% 	\item Using local tax rates and user-provided financial inputs, plots a parrallel coordinate graph with Plotly (using Python)
+		% 	\vspace{-2mm}
+		% 	\item Fetches/scrapes relevant data from SmartAsset.com's API using automatically detected, or user-provided zipcode
+		% \end{itemize}
+		% \vspace{-1.5mm}
+		% \textbf{Lightweight Messenger} \textit{(schoolwork)} \hfill \textit{\small 2020}
+		% \vspace{-2mm}
+		% \begin{itemize}
+		% 	\item Used Node.js and Socket.io to design a backend for a lightweight messaging system prototype
+		% 	\vspace{-2mm}
+		% 	\item Implemented a RESTful API with Express.js for interacting with a PostgreSQL database for user accounts, contacts, message history, etc.
+		% \end{itemize}
+		% \vspace{-1.25mm}
+		%{\footnotesize \textit{For my personal projects, check out my GitHub!}}
+
+		\vspace{1.5mm}
+		{\large \raggedright \textbf{Education}}
+		\vspace{1.25mm}
+	
+		\hrule
+		
+		\vspace{2.25mm}
+		\textbf{University of Pittsburgh}, Pittsburgh, PA\\
+      	{\small B.Sc. in Computer Science, \textbf{3.4 in-major, 3.2 overall} \hfill \textit{Aug. 2018 $\rightarrow$ Dec. 2020}}\\
+		{\small \textbf{Dean's List:} \textit{Spring 2020, Fall 2020}}\\
+
+		\vspace{1.25mm}
+		{\large \raggedright \textbf{Interests}}
+		\vspace{1.25mm}
+	
+		\hrule
+	
+		\vspace{2.25mm}
+		Private Online CS Tutor \hfill \textit{\small Oct. 2017 $\rightarrow$ Now}\\
+		Wikipedia Contributor (under username \textit{Avigl}) --- \href{https://pageviews.toolforge.org/?project=en.wikipedia.org&platform=all-access&agent=user&redirects=0&range=all-time&pages=Timeline_of_social_media|Timeline_of_online_advertising|Timeline_of_e-commerce|Screening_Partnership_Program|Silicon_Valley_Education_Foundation|Chicago_Community_Trust}{over 770k all-time article views} \hfill \textit{\small June 2016 $\rightarrow$ Now}\\
+		Electrical engineering, CAD and 3D printing, music, philosophy, writing, strategy and immersive RPGs (videogames)
+
+		\vspace*{\fill}
+		\textbf{Currently omitted or in-progress sections:} \textit{Personal projects, Publications, Coursework} 
+	\end{flushleft}
+\end{document}
