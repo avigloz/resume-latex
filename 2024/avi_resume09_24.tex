@@ -1,0 +1,154 @@
+% Resume (and underlying template) (C) Avi Glozman, 2019-2024.
+% See LICENSE for more information.
+
+\documentclass[10pt]{article}
+\usepackage[a4paper,  margin=0.25in, top=0.3in, bottom=0.3in]{geometry}
+\usepackage{hyperref}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage[many]{tcolorbox}
+\usetikzlibrary{decorations.pathreplacing}
+
+% Source: https://tex.stackexchange.com/a/277825
+% I also include some personal customization.
+\newtcolorbox{leftli}{
+    enhanced jigsaw, 
+    breakable, % allow page breaks
+    frame hidden, % hide the default frame
+	colback=gray!15,
+    overlay={%
+        \draw [
+            fill=none, % fill paper
+			decoration={brace,amplitude=0},
+            decorate,
+            thin,
+            black
+        ]
+        % right line
+        (frame.south west)--(frame.north west);
+    },
+    % paragraph skips obeyed within tcolorbox
+    parbox=false,
+}
+
+\begin{document}
+	\pagestyle{empty}
+	\begin{center}
+		{\huge \textbf{Avi Glozman}} {\large \hfill 425.802.6718 -- \href{mailto:avi@avigloz.net}{avi@avigloz.net} -- NYC} \\
+		%\vspace{0.5mm}
+		{\large \textsl{Backend Software Engineer} \hfill \href{https://avigloz.net}{avigloz.net} -- \href{https://github.com/avigloz}{github.com\texttt{/}avigloz}}
+	\end{center}
+	
+	\begin{flushleft}	
+		\vspace{-0.5mm}
+		{\large \raggedright \textbf{Skills}}
+		\vspace{1.25mm}
+	
+		\hrule
+	
+		\vspace{2.25mm}
+		\textbf{Programming Languages:} Haskell, Python, JavaScript (Node.js, Typescript), C\verb!#!, Elixir, HTML\texttt{/}CSS\\
+		\vspace{0.5mm}
+		\textbf{Concepts:} REST APIs, Distributed Systems, System Design\texttt{/}Architecture, MFA\\
+		\vspace{0.5mm}
+		\textbf{Software:} SQL (PostgreSQL, MySQL), NoSQL (MongoDB, DynamoDB), Object storage (S3), Git, Linux, AWS, \LaTeX\\ 
+		\vspace{0.5mm}
+		\textbf{Spoken Languages:} English (Native), Russian (Native), Spanish (Rusty Intermediate), Hebrew (Basic) 
+
+		\vspace{1.5mm}
+		{\large \raggedright \textbf{Experience}}
+		\vspace{1.25mm}
+	
+		\hrule
+
+		\vspace{2.25mm}
+
+		\textbf{Mercury}, {\small hybrid from New York, NY}\\
+		\begin{leftli}
+			{\small \textbf{Backend Software Engineer II, \href{https://mercury.com/credit}{Cards}} \hfill \textit{\small Aug. 2023 $\rightarrow$ Now}}\\
+			{\small \textbf{Backend Software Engineer, Cards}\hfill \textit{\small Jun. 2022 $\rightarrow$ Aug. 2023}}\\
+			{\footnotesize \textit{Fun fact: I learned Haskell on the job from scratch!}}
+			\begin{itemize}
+				\item Writing robust, test-driven Haskell to support Mercury's IO card and credit underwriting tools
+				\vspace{-2mm}
+				\item Building APIs and automation in administrative dashboards for managing customer credit lines
+				\vspace{-2mm}
+				\item Developing efficient and seamless collection tools for mitigating credit risk and enabling new credit products
+				\vspace{-2mm}
+				\item Owning projects end to end, from research and specification, to implementation and support
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{-1.50mm}
+		\textbf{Stream}, {\small remote from New York, NY}\\
+		\begin{leftli}
+			{\small \textbf{Backend Software Engineer and Architect, \href{https://www.streamorders.com/product-features/full-control}{SmartMenu}} \hfill \textit{\small Apr. 2021 $\rightarrow$ Jun. 2022}}\\
+			\begin{itemize}
+				\item Led design and development of SmartMenu, a first-of-its-kind system that allows for same-day restaurant onboarding
+				\vspace{-2mm}
+				\item Integrated Stripe payments to enable users to subscribe to Stream, and built related API and backend framework
+				\vspace{-2mm}
+				\item Deployed data streaming architecture on AWS for analytics and big data with S3, Elasticsearch, and Kinesis
+				\vspace{-2mm}
+				\item Wrote test-driven, fast and elegant Node.js code in an Agile manner and reported directly to the CTO
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{-1.50mm}
+		\textbf{Uber}, {\small Pittsburgh, PA}\\
+		\begin{leftli}
+			{\small \textbf{Software Engineering Intern, \href{https://www.uber.com/us/en/atg/research-and-development/perception-and-prediction/}{Advanced Technologies Group (ATG)}, Simulation}} \hfill \textit{\small May 2019 $\rightarrow$ Aug. 2019 (freshman summer)}\\
+			{\footnotesize \textit{Fun fact: ATG was acquired by Aurora in Dec. 2020!}}
+			\begin{itemize}
+				\item Created an ETL system using Python for moving self-driving car related data from DynamoDB to PostgreSQL, and solved complex data-syncing challenges
+				\vspace{-2mm}
+				\item Developed pruning algorithms in Python for preventing transfer of broken, invalid, and\texttt{/}or redundant data relating to self-driving car testing
+				\vspace{-2mm}
+				\item Contributed significantly to a web API written in Go for self-driving car data analysis in production
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{-1.50mm}
+		\textbf{Aspace}, {\small Seattle, WA}\\
+		\begin{leftli}
+			{\small \textbf{Lead Software Engineer, Backend}} \hfill \textit{\small May 2017 $\rightarrow$ Oct. 2017 (11\textsuperscript{th}\texttt{-} 12\textsuperscript{th} grade)}
+
+			\begin{itemize}
+				\item Deployed MySQL and MongoDB databases for storing parking spot sensor data and user data, respectively
+				\vspace{-2mm}
+				\item Designed a RESTful API written in Node.js to support UX on Android and iOS apps, and for recieving sensor data
+				\vspace{-2mm}
+				\item Wrote an implementation of Dijkstra's algorithm using Node.js for navigation, relying on user location data and data from Mapbox's API
+				\vspace{-2mm}
+				\item Used Twilio's SMS API to integrate two-factor authentication into the backend
+			\end{itemize}
+		\end{leftli}
+
+		\vspace{1.5mm}
+		{\large \raggedright \textbf{Education}}
+		\vspace{1.25mm}
+	
+		\hrule
+		
+		\vspace{2.25mm}
+		\textbf{University of Pittsburgh}, Pittsburgh, PA\\
+      	{\small B.Sc. in Computer Science \hfill \textit{Aug. 2018 $\rightarrow$ Dec. 2020}}\\
+		{\small \textbf{Dean's List:} \textit{Spring 2020, Fall 2020}}\\
+
+		\vspace{1.25mm}
+		{\large \raggedright \textbf{Interests}}
+		\vspace{1.25mm}
+	
+		\hrule
+	
+		\vspace{2.25mm}
+		Private Online CS Tutor \hfill \textit{\small Oct. 2017 $\rightarrow$ Now}\\
+		Wikipedia Contributor (under username \textit{Avigl}) --- \href{https://pageviews.wmcloud.org/?project=en.wikipedia.org&platform=all-access&agent=user&redirects=0&range=all-time&pages=Timeline_of_social_media|Timeline_of_online_advertising|Timeline_of_e-commerce|Screening_Partnership_Program|Silicon_Valley_Education_Foundation|Chicago_Community_Trust}{over 1.2M all-time aggregate views} \hfill \textit{\small June 2016 $\rightarrow$ Now}\\
+		Functional programming, neuroscience\texttt{/}biology, finance, music, metaphysics\texttt{/}ontology, writing poetry, history, videogames
+	\end{flushleft}
+\end{document}
